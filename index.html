@@ -27,7 +27,7 @@
                 <p class="price">{{ product.price | currency:"R$" }}</p>
                 <p class="date">{{ product.pubdate | date }}</p>
                 <div class="rating">
-                    <p class="likes"> {{ product.likes }} </p>
+                    <p class="likes" ng-click="plusOne($index)"> {{ product.likes }} </p>
                 </div>
             </div>
         </div>
