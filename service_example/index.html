@@ -21,13 +21,13 @@
 
                         <!-- datetime -->
                         <div class="weekday col-xs-4">
-
+                            {{ day.datetime | date }}
                         </div>
 
 
                         <!-- icon -->
                         <div class="weather col-xs-3">
-
+                            <img ng-src="{{ day.icon }}">
                         </div>
 
                         <div class="col-xs-1"></div>
@@ -35,14 +35,13 @@
 
                         <!-- high -->
                         <div class="high col-xs-2">
-
-
+                            {{ day.high }}
                         </div>
 
 
                         <!-- low -->
                         <div class="low col-xs-2">
-
+                            {{ day.low }}
                         </div>
                     </div>
                 </div>
